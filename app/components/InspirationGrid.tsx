@@ -27,13 +27,14 @@ Design Inspiration
 
 <div
 key={i}
-className="relative h-80 rounded-xl overflow-hidden group"
+className="relative w-full h-80 rounded-xl overflow-hidden group"
 >
 
 <Image
 src={img}
 alt="Decor inspiration"
 fill
+sizes="(max-width: 768px) 100vw, 33vw"
 className="object-cover group-hover:scale-105 transition duration-700"
 />
 
