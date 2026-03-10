@@ -8,11 +8,9 @@ export default function SmoothScroll() {
 useEffect(()=>{
 
 const lenis = new Lenis({
-duration:1.2,
-smooth:true,
-gestureDirection:"vertical",
-smoothTouch:false,
-touchMultiplier:2
+duration: 1.2,
+gestureDirection: "vertical",
+touchMultiplier: 2
 })
 
 function raf(time:number){
