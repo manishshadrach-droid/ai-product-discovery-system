@@ -1,46 +1,74 @@
 "use client"
 
 import { motion } from "framer-motion"
-import Image from "next/image"
+import Link from "next/link"
 
-export default function MegaHero(){
+export default function MegaHero() {
 
-return(
+  return (
 
-<section className="relative h-[90vh] flex items-center justify-center text-white">
+    <section
+      className="relative h-[92vh] flex items-center justify-center overflow-hidden"
+      style={{
+        backgroundImage: "url('/hero/hero-new.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center"
+      }}
+    >
 
-<Image
-src="/hero/hero-new.jpg"
-alt="Hero"
-fill
-className="object-cover"
-/>
+      {/* Dark cinematic overlay */}
 
-<div className="absolute inset-0 bg-black/40"/>
+      <div className="absolute inset-0 bg-black/45"></div>
 
-<motion.div
-initial={{opacity:0, y:40}}
-animate={{opacity:1, y:0}}
-transition={{duration:1}}
-className="relative text-center"
->
 
-<h1 className="text-5xl font-semibold tracking-tight mb-6">
-Elevate Your Living Space
-</h1>
+      {/* Hero Content */}
 
-<p className="text-lg text-gray-200 mb-8">
-Timeless décor crafted with artistry and elegance.
-</p>
+      <div className="relative text-center max-w-3xl px-6 text-white">
 
-<button className="bg-yellow-500 text-black px-6 py-3 rounded-lg hover:bg-yellow-400 transition">
-Explore Collection
-</button>
+        <motion.h1
+          initial={{ opacity: 0, y: 60 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-5xl md:text-7xl leading-tight font-serif tracking-tight mb-8"
+        >
+          Timeless Interior Luxury
+        </motion.h1>
 
-</motion.div>
 
-</section>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6 }}
+          className="text-lg md:text-xl text-gray-200 mb-10"
+        >
+          Handcrafted décor pieces designed to elevate modern interiors.
+        </motion.p>
 
-)
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1 }}
+        >
+
+          <Link
+            href="/shop"
+            className="inline-block px-10 py-4 bg-[#C6A969] text-black tracking-wider text-sm uppercase hover:bg-[#b79a55] transition rounded-sm"
+          >
+            Explore Collection
+          </Link>
+
+        </motion.div>
+
+      </div>
+
+
+      {/* Subtle gradient for luxury effect */}
+
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black/60 to-transparent"></div>
+
+    </section>
+
+  )
 
 }

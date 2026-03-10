@@ -26,28 +26,53 @@ quote:"Exceptional quality and visually stunning décor elements."
 
 return(
 
-<section className="bg-gray-100 py-28">
+<section className="bg-[#F7F5F2] py-32">
 
 <div className="max-w-7xl mx-auto px-8">
 
-<h2 className="text-4xl font-semibold tracking-tight text-center mb-20">
+{/* Section Header */}
+
+<div className="text-center mb-20">
+
+<h2 className="text-5xl md:text-6xl font-serif tracking-tight mb-4">
 What Designers Say
 </h2>
 
-<div className="grid md:grid-cols-3 gap-10">
+<p className="text-gray-600 max-w-xl mx-auto text-lg">
+Trusted by interior designers and stylists who appreciate craftsmanship and timeless décor.
+</p>
+
+</div>
+
+
+{/* Testimonials Grid */}
+
+<div className="grid md:grid-cols-3 gap-12">
 
 {testimonials.map((t,i)=>(
 
 <div
 key={i}
-className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition"
+className="bg-white p-10 rounded-2xl shadow-sm hover:shadow-xl transition duration-500"
 >
 
-<p className="text-gray-600 mb-6">
-“{t.quote}”
+{/* Quote Icon */}
+
+<p className="text-4xl text-[#C6A969] mb-6">“</p>
+
+{/* Quote Text */}
+
+<p className="text-gray-600 mb-8 leading-relaxed text-lg">
+{t.quote}
 </p>
 
-<h4 className="font-medium">
+{/* Divider */}
+
+<div className="w-10 h-[2px] bg-[#C6A969] mb-6"/>
+
+{/* Author */}
+
+<h4 className="font-semibold text-gray-900">
 {t.name}
 </h4>
 

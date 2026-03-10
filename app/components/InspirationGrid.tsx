@@ -15,28 +15,61 @@ const images=[
 
 return(
 
-<section className="max-w-7xl mx-auto px-8 py-28">
+<section className="max-w-7xl mx-auto px-8 py-32">
 
-<h2 className="text-4xl font-semibold tracking-tight text-center mb-20">
+{/* Section Header */}
+
+<div className="text-center mb-20">
+
+<h2 className="text-5xl md:text-6xl font-serif tracking-tight mb-4">
 Design Inspiration
 </h2>
 
-<div className="grid md:grid-cols-3 gap-6">
+<p className="text-gray-600 max-w-xl mx-auto text-lg">
+Explore curated interiors styled with Pokar décor pieces.
+</p>
+
+</div>
+
+
+{/* Inspiration Grid */}
+
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
 {images.map((img,i)=>(
 
 <div
 key={i}
-className="relative w-full h-80 rounded-xl overflow-hidden group"
+className="relative w-full h-[360px] rounded-2xl overflow-hidden group cursor-pointer"
 >
 
 <Image
 src={img}
 alt="Decor inspiration"
 fill
-sizes="(max-width: 768px) 100vw, 33vw"
-className="object-cover group-hover:scale-105 transition duration-700"
+sizes="(max-width:768px) 100vw, 33vw"
+className="object-cover transition duration-700 group-hover:scale-110"
 />
+
+
+{/* Overlay */}
+
+<div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition duration-500"/>
+
+
+{/* Hover Label */}
+
+<div className="absolute bottom-6 left-6 text-white opacity-0 group-hover:opacity-100 transition duration-500">
+
+<p className="text-sm tracking-widest uppercase text-gray-200">
+Inspiration
+</p>
+
+<h3 className="text-lg font-semibold">
+Styled Interior
+</h3>
+
+</div>
 
 </div>
 

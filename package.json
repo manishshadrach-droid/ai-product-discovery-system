@@ -13,9 +13,10 @@
   },
   "dependencies": {
     "@prisma/client": "^6.19.2",
+    "@studio-freight/lenis": "^1.0.42",
     "bcrypt": "^6.0.0",
     "cloudinary": "^2.9.0",
-    "framer-motion": "^12.35.1",
+    "framer-motion": "^12.35.2",
     "lucide-react": "^0.577.0",
     "next": "16.1.6",
     "next-auth": "^4.24.13",
@@ -24,6 +25,7 @@
     "razorpay": "^2.9.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "react-parallax-tilt": "^1.7.320",
     "zustand": "^5.0.11"
   },
   "devDependencies": {
