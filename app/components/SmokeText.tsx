@@ -13,29 +13,33 @@ export default function SmokeText() {
 
   return (
 
-    <div className="relative flex items-center justify-center h-[200px] w-full overflow-hidden">
+    <div className="absolute inset-0 pointer-events-none">
 
       <Particles
         id="wood-dust"
-        init={particlesInit}
+        particlesInit={particlesInit}
         className="absolute inset-0"
         options={{
           fullScreen:false,
 
           particles:{
-            number:{ value:90 },
+            number:{ value:80 },
 
-            color:{ value:"#C8A27A" }, // warm wood dust color
+            color:{ value:"#C8A27A" },
 
             opacity:{ value:0.45 },
 
-            size:{ value:{ min:2, max:6 } },
+            size:{
+              value:{ min:2, max:5 }
+            },
 
             move:{
               enable:true,
               speed:0.6,
               random:true,
-              outModes:"out"
+              outModes:{
+                default:"out"
+              }
             }
           },
 
@@ -49,21 +53,16 @@ export default function SmokeText() {
 
             modes:{
               repulse:{
-                distance:140
+                distance:120
               }
             }
           }
+
         }}
       />
 
-      <h1 className="font-cursive brand-glow text-white text-[80px] md:text-[140px] tracking-widest relative z-10 text-center leading-none">
-
-        WOODS
-        <br/>
-        & GRAINS
-
-      </h1>
-
     </div>
+
   )
+
 }
