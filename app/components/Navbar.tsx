@@ -42,7 +42,7 @@ ${scrolled
 <div className="flex items-center">
 
 <h1 className="navbar-brand">
-POKAR
+Woods & Grains
 </h1>
 
 </div>

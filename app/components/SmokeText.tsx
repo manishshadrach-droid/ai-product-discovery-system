@@ -2,38 +2,38 @@
 
 import { useCallback } from "react"
 import Particles from "@tsparticles/react"
-import { loadAll } from "@tsparticles/all"
+import { loadSlim } from "@tsparticles/slim"
 import type { Engine } from "@tsparticles/engine"
 
 export default function SmokeText() {
 
   const particlesInit = useCallback(async (engine: Engine) => {
-    await loadAll(engine)
+    await loadSlim(engine)
   }, [])
 
   return (
 
-    <div className="relative flex items-center justify-center h-[160px] w-full">
+    <div className="relative flex items-center justify-center h-[200px] w-full overflow-hidden">
 
       <Particles
-        id="smoke"
+        id="wood-dust"
         init={particlesInit}
         className="absolute inset-0"
         options={{
           fullScreen:false,
 
           particles:{
-            number:{ value:100 },
+            number:{ value:90 },
 
-            color:{ value:"#ffffff" },
+            color:{ value:"#C8A27A" }, // warm wood dust color
 
-            opacity:{ value:0.35 },
+            opacity:{ value:0.45 },
 
-            size:{ value:{ min:2, max:5 } },
+            size:{ value:{ min:2, max:6 } },
 
             move:{
               enable:true,
-              speed:0.5,
+              speed:0.6,
               random:true,
               outModes:"out"
             }
@@ -56,8 +56,12 @@ export default function SmokeText() {
         }}
       />
 
-      <h1 className="font-cursive hero-hindi brand-glow text-white text-[90px] md:text-[140px] tracking-widest relative z-10">
-        पोकर
+      <h1 className="font-cursive brand-glow text-white text-[80px] md:text-[140px] tracking-widest relative z-10 text-center leading-none">
+
+        WOODS
+        <br/>
+        & GRAINS
+
       </h1>
 
     </div>

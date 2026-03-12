@@ -10,7 +10,7 @@ export default function SuccessPage() {
       </h1>
 
       <p className="mb-6">
-        Thank you for shopping with Pokar Home
+        Thank you for shopping with Woods and Grains! Your order has been received and is being processed.
       </p>
 
       <Link

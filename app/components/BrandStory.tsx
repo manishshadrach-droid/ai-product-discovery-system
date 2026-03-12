@@ -34,7 +34,7 @@ Crafted With Passion
 </h2>
 
 <p className="text-gray-600 mb-6 leading-relaxed text-lg">
-At Pokar Home, every décor piece is thoughtfully designed to bring warmth,
+At Woods & Grains, every décor piece is thoughtfully designed to bring warmth,
 artistry, and elegance into modern living spaces. Our artisans combine
 traditional craftsmanship with contemporary aesthetics to create pieces
 that transform homes into inspiring environments.

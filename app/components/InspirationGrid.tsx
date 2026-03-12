@@ -26,7 +26,7 @@ Design Inspiration
 </h2>
 
 <p className="text-gray-600 max-w-xl mx-auto text-lg">
-Explore curated interiors styled with Pokar décor pieces.
+Explore curated interiors styled with Woods and Grains décor pieces.
 </p>
 
 </div>

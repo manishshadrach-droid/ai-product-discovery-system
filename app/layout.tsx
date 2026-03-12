@@ -1,7 +1,7 @@
 import "./globals.css"
 import type { Metadata } from "next"
 
-import { Yatra_One, Cinzel_Decorative } from "next/font/google"
+import { Allura, Playfair_Display } from "next/font/google"
 
 import Navbar from "./components/Navbar"
 import CartDrawer from "./components/CartDrawer"
@@ -11,29 +11,29 @@ import WhatsAppFloat from "./components/WhatsAppFloat"
 import MiniCart from "./components/MiniCart"
 
 
-/* Sanskrit-style hero font */
+/* Brand Script Font */
 
-const yatra = Yatra_One({
+const cursiveFont = Allura({
+  subsets: ["latin"],
   weight: "400",
-  subsets: ["latin","devanagari"],
   variable: "--font-cursive",
   display: "swap"
 })
 
 
-/* Navbar brand font */
+/* Elegant Heading Font */
 
-const cinzelDecor = Cinzel_Decorative({
-  subsets:["latin"],
-  weight:["700","900"],
-  variable:"--font-cinzelDecor",
-  display:"swap"
+const headingFont = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400","600"],
+  variable: "--font-heading",
+  display: "swap"
 })
 
 
 export const metadata: Metadata = {
-  title: "पोकर | Pokar Home Decors",
-  description: "Premium handcrafted décor for modern interiors",
+  title: "Woods & Grains",
+  description: "Premium plywood and wood materials for modern interiors",
 }
 
 
@@ -45,7 +45,10 @@ export default function RootLayout({
 
   return (
 
-    <html lang="en" className={`${yatra.variable} ${cinzelDecor.variable}`}>
+    <html
+      lang="en"
+      className={`${cursiveFont.variable} ${headingFont.variable}`}
+    >
 
       <body className="bg-white text-black antialiased">
 
@@ -70,5 +73,4 @@ export default function RootLayout({
     </html>
 
   )
-
 }

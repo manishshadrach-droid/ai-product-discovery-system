@@ -4,11 +4,11 @@ export default function AboutPage() {
       <div className="max-w-5xl mx-auto bg-white p-12 rounded-2xl shadow-sm">
 
         <h1 className="text-4xl font-bold mb-8">
-          About Pokar Home Decors
+          About Woods & Grains
         </h1>
 
         <p className="text-gray-600 leading-relaxed mb-6">
-          Pokar Home Decors is a premium Indian brand focused on handcrafted,
+          Woods and Grains is a premium Indian brand focused on handcrafted,
           artistic home decor pieces designed to elevate modern living spaces.
         </p>
 

@@ -15,7 +15,7 @@ return(
 <div>
 
 <h3 className="text-xl font-semibold mb-4">
-Pokar Home
+Woods and Grains
 </h3>
 
 <p className="text-gray-400 text-sm leading-relaxed">
@@ -114,7 +114,7 @@ Join
 
 <div className="border-t border-gray-800 text-center py-6 text-sm text-gray-500">
 
-© {new Date().getFullYear()} Pokar Home. All rights reserved.
+© {new Date().getFullYear()} Woods and Grains. All rights reserved.
 
 </div>
 

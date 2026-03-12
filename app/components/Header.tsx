@@ -24,7 +24,7 @@ export default function Header() {
           href="/"
           className="text-2xl font-bold"
         >
-          Pokar Home
+          Woods & Grains
         </Link>
 
         {/* SEARCH */}

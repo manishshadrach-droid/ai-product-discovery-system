@@ -78,7 +78,7 @@ Go Shopping →
 
 <div className="bg-yellow-400 rounded-xl flex items-center justify-center text-lg font-medium">
 
-Store: Pokar Home
+Store: Woods and Grains
 
 </div>
 
